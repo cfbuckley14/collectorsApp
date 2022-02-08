@@ -5,7 +5,7 @@ function generateCharacterHtml(array $allCharacters): string {
     }
     $characterHtml = "";
     foreach ($allCharacters as $character) {
-        $characterHtml .= '<div>' . '<p>' . 'Name: ' . $character['name'] . '</p>' .
+        $characterHtml .= '<div class="containerItem">' . '<p>' . 'Name: ' . $character['name'] . '</p>' .
             '<p>' . 'Alignment: ' . $character['alignment'] . '</p>' .
             '<p>' . 'Weight: ' . $character['weight_kg'] . 'kg' . '</p>' .
             '<p>' . 'Height: ' . $character['height_cm'] . 'cm' . '</p>' .
