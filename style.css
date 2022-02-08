@@ -17,6 +17,9 @@ h1 {
     background-color: #b13536;
     height: 300px;
     width: 800px;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-style: double;
     font-size: 15rem;
     text-align: center;
     padding: 20px;
