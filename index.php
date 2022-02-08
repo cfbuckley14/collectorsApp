@@ -7,6 +7,19 @@ $query = $db->prepare('SELECT * FROM `marvelscharacters`');
 $query->execute();
 $allCharacters = $query->fetchALL();
 
-echo '<h2>' . 'Marvel Cinematic Universe Characters' . '</h2>';
+$displayCharacterHtml = generateCharacterHtml($allCharacters);
+?>
 
-echo displayCharacters($allCharacters);
+<html lang="en-GB">
+
+    <div>
+        <h1>Marvel Cinematic Universe Characters</h1>
+    </div>
+
+    <div>
+        <p>
+            <?= $displayCharacterHtml?>
+        </p>
+    </div>
+
+</html>
