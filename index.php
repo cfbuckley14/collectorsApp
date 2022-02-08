@@ -20,14 +20,28 @@ $displayCharacterHtml = generateCharacterHtml($allCharacters);
 </head>
 
 <body>
-    <div class="heading">
+    <header>
         <h1>MARVEL CHARACTERS</h1>
-    </div>
-    <div class="parentContainer">
-        <p>
-            <?= $displayCharacterHtml?>
-        </p>
-    </div>
+    </header>
+    <main>
+        <?= $displayCharacterHtml?>
+    </main>
+    <footer>
+        <h2 id="contact-me">Want to get in touch? Here's the best ways to...</h2>
+        <div>
+            <a href="https://www.linkedin.com/in/charlotte-buckley-93866416a/">
+                <img class="social-icons" src="linked-in.png" alt="LinkedIn Icon"/>
+            </a>
+            <a href="https://www.instagram.com/charlotte.codes/">
+                <img class="social-icons" src="instagram.png" alt="Instagram Icon"/>
+            </a>
+            <a href="https://github.com/cfbuckley14">
+                <img class="social-icons" src="github.png" alt="GitHub Icon"/>
+            </a>
+            <a href="mailto:cfbuckley14@gmail.com" >
+                <img class="social-icons" src="mail.png" alt="Email Icon"/>
+            </a>
+    </footer>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ h1 {
     margin: 0;
 }
 
-.heading {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ h1 {
     margin: 0;
 }
 
-.parentContainer {
+main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -55,12 +55,35 @@ h1 {
     background-color: #b13536;
 }
 
+footer {
+    background-color: #b13536;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.social-icons {
+    width: 90px;
+    padding: 7px;
+    text-decoration: none;
+}
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 10rem;
     }
     .header {
         width: auto;
+        height: auto;
+    }
+    footer h3 {
+        font-size: 2rem;
         height: auto;
     }
 }
