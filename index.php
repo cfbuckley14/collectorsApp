@@ -3,11 +3,11 @@ require_once './functions.php';
 
 $db = new PDO('mysql:host=db; dbname=collectorsapp', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$query = $db->prepare('SELECT * FROM `marvelscharacters`');
+$query = $db->prepare('SELECT * FROM `marvelcharacters`');
 $query->execute();
-$allCharacters = $query->fetchALL();
+$allCharacters = $query->fetchAll();
 
-$displayCharacterHtml = generateCharacterHtml($allCharacters);
+$charactersHtml = generateAllCharactersHtml($allCharacters);
 ?>
 
 <html lang="en-GB">
@@ -21,27 +21,11 @@ $displayCharacterHtml = generateCharacterHtml($allCharacters);
 
 <body>
     <header>
-        <h1>MARVEL CHARACTERS</h1>
+        <h1>Marvel Characters</h1>
     </header>
     <main>
-        <?= $displayCharacterHtml?>
+        <?= $charactersHtml?>
     </main>
-    <footer>
-        <h2 id="contact-me">Want to get in touch? Here's the best ways to...</h2>
-        <div>
-            <a href="https://www.linkedin.com/in/charlotte-buckley-93866416a/">
-                <img class="social-icons" src="linked-in.png" alt="LinkedIn Icon"/>
-            </a>
-            <a href="https://www.instagram.com/charlotte.codes/">
-                <img class="social-icons" src="instagram.png" alt="Instagram Icon"/>
-            </a>
-            <a href="https://github.com/cfbuckley14">
-                <img class="social-icons" src="github.png" alt="GitHub Icon"/>
-            </a>
-            <a href="mailto:cfbuckley14@gmail.com" >
-                <img class="social-icons" src="mail.png" alt="Email Icon"/>
-            </a>
-    </footer>
 </body>
 
 </html>
