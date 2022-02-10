@@ -35,11 +35,42 @@ header {
 }
 
 main {
+    gap: 30px;
+    font-size: 1.25rem;
+}
+
+form {
+    border-color: #ffffff;
+    border-width: 10px;
+    border-style: double;
+    background-color: #b13536;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #ffffff;
+    font-family: 'marvel-regular';
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border-color: #ffffff;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #000000;
+    transition-duration: 0.4s;
+    color: #ffffff;
+}
+
+section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    font-size: 1.25rem;
 }
 
 .individualCharacter {
@@ -63,4 +94,5 @@ main {
         font-size: 6rem;
         height: auto;
         width: auto;
+    }
 }
