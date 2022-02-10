@@ -9,8 +9,8 @@ function generateAllCharactersHtml(array $allCharacters): string {
     foreach ($allCharacters as $character) {
         $characterHtml .= '<div class="individualCharacter">' . '<p>' . 'Name: ' . $character['name'] . '</p>' .
             '<p>Alignment: ' . $character['alignment'] . '</p>' .
-            '<p>Weight: ' . $character['weight_kg'] . ' kg</p>' .
-            '<p>Height: ' . $character['height_cm'] . ' cm</p>' .
+            '<p>Weight: ' . $character['weight_kg'] . 'kg</p>' .
+            '<p>Height: ' . $character['height_cm'] . 'cm</p>' .
             '<p>Place of Birth: ' . $character['place_of_birth'] . '</p>' . '</div>';
     }
     return $characterHtml;
