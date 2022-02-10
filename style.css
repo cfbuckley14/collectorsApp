@@ -87,6 +87,19 @@ section {
     width: 350px;
     padding: 20px;
     background-color: #b13536;
+    opacity:0.9;
+}
+
+.individualCharacter:hover {
+    background-color: black;
+    transition-duration: 0.3s;
+    box-shadow:
+            1px 1px #ffffff,
+            2px 2px #ffffff,
+            3px 3px #ffffff;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    opacity:1;
 }
 
 @media screen and (max-width: 600px) {
